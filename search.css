@@ -1,0 +1,69 @@
+body {
+	max-width: 1000px;
+	margin: auto;
+	min-height: 100vh;
+	box-shadow: 0px 0px 2em grey;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+}
+header {
+	background-color: hsl(210, 90%, 95%);
+	padding: 2em;
+}
+header div#centred {
+	margin: auto;
+	max-width: 640px;
+}
+header h1 {
+	font-weight: normal;
+	font-size: 30px;
+	margin-top: 0;
+	color: #444;
+}
+header div#search-inputs {
+	display: flex;
+	max-width: 640px;
+}
+header input {
+	font-family: monospace;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 6px;
+	flex: 1;
+}
+header button {
+	margin-left: 0.5em;
+	font-size: 20px;
+	width: 4.5em;
+}
+main {
+	flex: 1;
+	padding: 0 2em 0 2em;
+}
+main section.result h1 {
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 4px;
+}
+main section.result a.result-url {
+	color: green;
+}
+main section.result p.result-summary {
+	margin-top: 8px;
+}
+main section.result a {
+	text-decoration: none;
+}
+main section.result a:hover {
+	text-decoration: underline;
+}
+footer {
+	background-color: hsl(210, 90%, 95%);
+	padding: 1em 2em 2em 2em;
+}
+p.powered-by {
+	color: grey;
+	font-style: italic;
+	cursor: default;
+}
