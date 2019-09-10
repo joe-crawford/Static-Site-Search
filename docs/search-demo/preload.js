@@ -1,7 +1,7 @@
 (function () {
 "use strict";
 
-const SEARCH_PATH_PREFIX = "/search-demo/";
+const SEARCH_PATH_PREFIX = "/Static-Site-Search/search-demo/";
 
 // fixed random prefix for localStorage keys so that they don't get accidentally clobbered
 const storagePrefix = "static-site-search-973804c0-";

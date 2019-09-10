@@ -1,7 +1,7 @@
 "use strict";
 
 // From preload.js:
-const SEARCH_PATH_PREFIX = "/search-demo/";
+const SEARCH_PATH_PREFIX = "/Static-Site-Search/search-demo/";
 const storagePrefix = "static-site-search-973804c0-";
 const expiryTimeMilliseconds = 24 * 60 * 60 * 1000;
 const resourceLocations = [["index", SEARCH_PATH_PREFIX+"index.json"], ["index_urls", SEARCH_PATH_PREFIX+"index_urls.json"]];
