@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Search</title>
+	<link rel="stylesheet" href="search.css">
+	<script src="search.js"></script>
+</head>
+<body>
+	<!-- Templates -->
+	<template id="result-template">
+	    <section class="result">
+            <h1><a href="#result_url"></a></h1>
+            <a class="result-url" href="#result_url"></a>
+            <p class="result-summary"></p>
+        </section>
+	</template>
+
+	<header>
+		<div id="centred">
+			<h1>Search <a href="http://contemporary-home-computing.org"><i>Contemporary Home Computing</i></a>:</h1>
+			<div id="search-inputs">
+				<input id ="search-bar" type="search" placeholder="Search this site..." autofocus> <button id="search-button" type="button">&#128269;</button>
+			</div>
+			<script>document.getElementById("search-button").style.height = document.getElementById("search-bar").offsetHeight + "px";</script>
+		</div>
+	</header>
+
+	<main>
+		<!-- Results -->
+		
+	</main>
+
+	<footer>
+		<p class="powered-by">Search powered by Static-Site-Search</p>
+	</footer>
+</body>
+</html>
