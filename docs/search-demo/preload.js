@@ -47,6 +47,23 @@ function isStale(key) {
 	}
 }
 
+function bindUI() {
+	const searchBar = document.querySelector("input#static-site-search-bar");
+	const searchButton = document.querySelector("button#static-site-search-button");
+	
+	searchButton.addEventListener("click", function () {
+		const input = searchBar.value;
+		if (input !== "") {
+			window.location = SEARCH_PATH_PREFIX + "search.html#q=" + encodeURIComponent(input);
+		}
+	});
+	searchBar.addEventListener("keydown", function (event) {
+		if (event.key === "Enter") {
+			searchButton.click();
+		}
+	});
+}
+
 function preload() {
 	for (const resource of resourceLocations) {
 		let key = resource[0];
@@ -55,6 +72,12 @@ function preload() {
 			requestAndStoreTimestamped(url, key);
 		}
 	}
+}
+
+if (document.readyState === "loading") {
+	document.addEventListener("DOMContentLoaded", bindUI);
+} else {
+	bindUI();
 }
 
 preload();
