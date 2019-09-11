@@ -48,4 +48,4 @@ will start crawling from https://www.example.org and is allowed to follow links 
 
 ## Including the generated search engine on your static website
 
-The generated output includes a `preload.js` website, which you can include on your web pages to cache the index files required for the search engine in your users' browsers in the background. It also lets you add a search box to any page on your website by adding some appropriate HTML elements. For more information, see [this demonstration page](https://joe-crawford.github.io/Static-Site-Search/search-demo/index.html).
+The generated output includes a `preload.js` website, which you can include on your web pages to cache the index files required for the search engine in your users' browsers in the background. It also lets you add a search box to any page on your website by adding some appropriate HTML elements. For more information, see [this demonstration page](https://joe-crawford.github.io/Static-Site-Search/search-demo/).
